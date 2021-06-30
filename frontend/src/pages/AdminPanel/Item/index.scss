@@ -1,0 +1,81 @@
+.item {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+
+  &__actions {
+    width: 140px;
+    height: inherit;
+    display: flex;
+
+    button {
+      flex-grow: 1;
+      height: inherit;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+
+  &__activateButton {
+    height: inherit;
+    flex-grow: 1;
+
+    button {
+      width: 100%;
+      background-color: green;
+
+      &:hover {
+        background-color: rgba(0, 128, 0, 0.897);
+      }
+    }
+  }
+
+  &__diactivateButton {
+    height: inherit;
+    flex-grow: 1;
+
+    button {
+      width: 100%;
+      background-color: red;
+
+      &:hover {
+        background-color: rgba(255, 0, 0, 0.938);
+      }
+    }
+  }
+
+  &__email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #44c4e7;
+    width: 300px;
+    height: 100%;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__isActiveStatus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: wheat;
+    width: 300px;
+    height: 100%;
+    border: 0;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
