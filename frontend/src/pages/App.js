@@ -1,9 +1,12 @@
 import { BrowserRouter } from 'react-router-dom';
+import { RouterConfig } from '../navigation/RouterConfig';
 import { RootStoreProvider } from '../contexts/RootStoreProvider';
 
 const App = () => (
   <RootStoreProvider>
-    <BrowserRouter></BrowserRouter>
+    <BrowserRouter>
+      <RouterConfig />
+    </BrowserRouter>
   </RootStoreProvider>
 );
 

@@ -2,7 +2,6 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import PrivateRoute from './Auth/PrivateRoute';
 import { Login } from '../pages/Login';
-import { Home } from '../pages/Home';
 import { AdminPanel } from '../pages/AdminPanel';
 import { DefaultLayout } from '../components/layouts/DefaultLayout';
 
@@ -11,11 +10,6 @@ export const RouterConfig = () => (
     <Route path="/login">
       <Login />
     </Route>
-    <PrivateRoute path="/home">
-      <DefaultLayout>
-        <Home />
-      </DefaultLayout>
-    </PrivateRoute>
     <PrivateRoute path="/admin-panel">
       <DefaultLayout>
         <AdminPanel />
