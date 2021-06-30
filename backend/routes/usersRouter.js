@@ -1,14 +1,8 @@
 import { Router } from "express";
 import passport from "../core/passport";
-import usersController from "../controllers/userController";
+import usersController from "../controllers/usersController";
 
 const router = Router();
-
-router.get(
-  "/me",
-  passport.authenticate("jwt", { session: false }),
-  usersController.getMe
-);
 
 router.get(
   "/adminStatus",
