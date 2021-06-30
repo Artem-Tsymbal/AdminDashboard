@@ -4,6 +4,7 @@ import { UsersApi } from '../api/usersApi';
 
 class AuthStore {
   isAuthed = false;
+
   dataOfCurrentUser = {};
 
   constructor() {

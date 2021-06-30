@@ -1,11 +1,14 @@
 import React from 'react';
 import { useHistory, Link } from 'react-router-dom';
+import { useRootStore } from '../../../contexts/RootStoreProvider';
 import './index.scss';
 
 export const DefaultLayout = ({ children }) => {
   const history = useHistory();
+  const { authStore } = useRootStore();
 
   const onSignOut = () => {
+    authStore.fetchSignOutRequest();
     history.push('/login');
   };
 

@@ -1,6 +1,6 @@
 import { toJS } from 'mobx';
-import { Redirect, Route } from 'react-router-dom';
-import React, { useEffect, useHistory, useLayoutEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
+import { Redirect, Route, useHistory } from 'react-router-dom';
 import { useRootStore } from '../../contexts/RootStoreProvider';
 
 const PrivateRoute = ({ children, ...rest }) => {
