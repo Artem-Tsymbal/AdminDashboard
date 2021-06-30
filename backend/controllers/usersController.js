@@ -52,7 +52,6 @@ class UsersController {
     try {
       const userId = req.params.id;
       const { isAdmin } = req.user;
-      console.log(userId);
 
       const errors = validationResult(req);
 
