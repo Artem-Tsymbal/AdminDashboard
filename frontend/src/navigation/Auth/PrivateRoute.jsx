@@ -18,6 +18,8 @@ const PrivateRoute = ({ children, ...rest }) => {
         );
 
         setTimeout(() => {
+          // eslint-disable-next-line no-alert
+          alert('Your account is deactivated for inactive');
           authStore.fetchSignOutRequest();
           history.push('/login');
         }, 1000);

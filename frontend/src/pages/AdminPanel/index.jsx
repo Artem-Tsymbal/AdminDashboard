@@ -49,7 +49,7 @@ export const AdminPanel = observer(() => {
           ))}
         </div>
       ) : (
-        <div>You are not an admin</div>
+        <div className="adminPanel__notification">You are not an admin</div>
       )}
     </div>
   );

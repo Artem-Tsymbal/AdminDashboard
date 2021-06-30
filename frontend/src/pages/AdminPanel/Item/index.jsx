@@ -19,6 +19,6 @@ export const Item = ({ user, updateAccountStatus }) => (
     </div>
 
     <div className="item__email">{user.email}</div>
-    <div className="item__isActiveStatus">{user.isActive.toString()}</div>
+    <div className="item__isActiveStatus">{`Account is activated: ${user.isActive.toString()}`}</div>
   </div>
 );

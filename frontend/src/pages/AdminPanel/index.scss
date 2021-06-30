@@ -5,10 +5,26 @@
   justify-content: center;
   align-items: center;
 
-  &-wrapper {
-    height: 200px;
+  &__wrapper {
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+
+  &__changeAdminStatusButton {
+    margin-bottom: 40px;
+    padding: 15px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+    button {
+      border: none;
+      outline: none;
+      background: none;
+    }
+
+    &:hover {
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    }
   }
 }
