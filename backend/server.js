@@ -3,6 +3,8 @@ import { config } from "dotenv";
 
 config();
 
+import "./core/db";
+
 const app = express();
 
 app.use(express.json());
