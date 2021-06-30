@@ -3,6 +3,7 @@ import express from "express";
 import passport from "./core/passport";
 import { errorMiddleware } from "./middlewares/errorMiddleware";
 import authRouter from "./routes/authRouter";
+import usersRouter from "./routes/usersRouter";
 
 config();
 
@@ -14,7 +15,8 @@ app.use(express.json());
 app.use(passport.initialize());
 app.use(errorMiddleware);
 
-app.use("/auth", sessionMiddleware, authRouter);
+app.use("/auth", authRouter);
+app.use("/users", usersRouter);
 
 app.listen(process.env.PORT, () => {
   console.log("Server started");
